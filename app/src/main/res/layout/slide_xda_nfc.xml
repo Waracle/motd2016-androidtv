@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/xda"
+        />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/logo"
+        android:paddingTop="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_0">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• NFC implant"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_1">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Approved safe in Germany"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_2">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Around £69"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_3">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Ultimate 2FA"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_4">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Mastercard testing for security"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+    </LinearLayout>
+
+</RelativeLayout>

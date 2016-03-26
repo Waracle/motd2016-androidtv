@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+   <LinearLayout
+       android:id="@+id/title"
+       android:layout_above="@+id/image"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:orientation="vertical"
+       android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bringing Your App to the Living Room:"
+            style="@style/Widget.Leanback.Title.Text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development on Amazon Fire TV"
+            style="@style/Widget.Leanback.Title.Text" />
+
+    </LinearLayout>
+
+
+    <com.waracle.motd2016.actions.GoneToVisibleAction
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:tag="ACTION_0">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/firetv_big"
+             />
+
+    </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_1">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Android 5.1 (Lolipop)"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_2">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• No proprietary SDK required"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_3">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fire TV box 4k compatible"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_4">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Fire TV stick is a best seller"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+    </LinearLayout>
+
+    <!-- Right column -->
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_5">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Android Studio sample app"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_6">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Leanback API"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_7">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Amazon App Store"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_8">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• This presentation is an app!"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BorderedSlide"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Widget.Leanback.Title.Text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skyscanner: The Messaging Economy" />
+
+    <com.waracle.motd2016.actions.GoneToVisibleAction
+        android:id="@+id/logo"
+        android:tag="ACTION_0"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <ImageView
+            android:layout_margin="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/skyscanner" />
+
+    </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/logo"
+        android:paddingTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_1">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Lite apps for 2g areas, e.g. Africa"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_2">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Apps inside of messaging clients"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_3">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Intelligent agents"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+        <com.waracle.motd2016.actions.GoneToVisibleAction
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:tag="ACTION_4">
+
+            <TextView
+                style="@style/Widget.Leanback.Row.Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Conversations allow pre-fetching of data"
+                />
+
+        </com.waracle.motd2016.actions.GoneToVisibleAction>
+
+    </LinearLayout>
+
+</RelativeLayout>
